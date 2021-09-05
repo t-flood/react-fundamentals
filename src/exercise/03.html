@@ -16,8 +16,8 @@
 
     const className = 'container'
     const children = 'Hello World'
-
-    const element = <div className={className}> {children} </div>
+    const props = {children, className}
+    const element = <div {...props} />
 
     // const element = React.createElement('div', {
     //   className: 'container',
